@@ -12,7 +12,7 @@ try:
     print(f"The answer is {answer}")
 
 except:
-    print("Invalid input. Please enter a number.")
+    print("That is not a number'")
 # There is an extra point available for validating that they entered numbers!
 # Add to your code so that if they entered something other than an integer it prints
 # 'That is not a number' and exits.
