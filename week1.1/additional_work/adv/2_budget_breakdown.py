@@ -12,7 +12,7 @@ try:
     average = total/3
     print(f"Your travel cost is {travel_cost_input} pounds, food cost is {food_cost_input} pounds, accomodation cost is {accommodation_cost_input} pounds. Hence your total cost is {total:.2f} pounds, and average cost is {average:.2f} pounds.")
 except: 
-    print("This is not a number.120")
+    print("This is not a number.")
 # TODO: convert each value to a number type that supports decimals
 # TODO: calculate the total and the average spend per category
 # TODO: print the three costs, the total, and the average
