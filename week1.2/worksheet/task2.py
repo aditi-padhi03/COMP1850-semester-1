@@ -19,5 +19,5 @@ else:
     if len(numbers)%2 != 0:
         print(f"Median: {numbers[mid]}")
     elif len(numbers)%2 == 0:
-        print(f"Meadian = {(numbers[mid-1]+numbers[mid])/2}")
+        print(f"Median = {(numbers[mid-1]+numbers[mid])/2}")
     
