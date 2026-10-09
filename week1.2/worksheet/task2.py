@@ -6,7 +6,7 @@ if numbers ==[]:
     sys.exit("Error: no numbers provided")
 else:
     min_num = min(numbers)
-    print(f"Minumum = {min_num}")
+    print(f"Minimum = {min_num}")
 
     max_num = max(numbers)
     print(f"Maximum = {max_num}")
