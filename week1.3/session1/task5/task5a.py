@@ -4,8 +4,12 @@ course = "computer science"
 course_ls = list(course)
 course_ls.sort()
 
-for ch in course_ls:
-	print(ch)
+chars = []
+for ch in course:
+	chars.append(ch)
+
+chars.sort()
+print(chars)
 
 
 # create a list data structure of the characters from the course string
