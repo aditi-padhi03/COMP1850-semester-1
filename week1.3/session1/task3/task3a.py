@@ -12,3 +12,7 @@ while i < 20:
 # Hint: we discused operators such as % and // in recent weeks
 
 # Hint 2: there are several ways to do this - using truthy/falsey values is the least code
+while i < 20:
+    i = i + 1
+    if i % 3 != 0:
+        print(i)
