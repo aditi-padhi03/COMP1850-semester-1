@@ -14,4 +14,7 @@ for i in values:
 print(newval)
 
 # write the list comprehension equivalent to the `for` loop
-
+new_values = [(2*i) if i % 2 == 0 else i for i in values]
+# We cant use "newval.append()" inside a list comprehension because it adds a value to the list but returns "None"
+# Also you don't need append() because the list comprehension builds the new list automatically.
+print(new_values)
