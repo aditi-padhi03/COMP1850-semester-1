@@ -4,7 +4,12 @@
 # You can use any of the .txt files to test this - or even make your own.
 
 # open and read the file
+filename = input("Enter the file name: ")
+with open(filename, "r") as infile:
+    insidefile = infile.read()
 
+numwords = insidefile.split()
+print(len(numwords))
 # calculate the number of words
 # hint: you could use .split() to break up by spaces
 # hint: watch out for empty lines that might give you empty strings
