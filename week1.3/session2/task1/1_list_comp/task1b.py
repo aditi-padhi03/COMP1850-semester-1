@@ -2,7 +2,7 @@
 
 values = [1,4,2,6,3,7]
 
-print(values)
+
 
 newval = []
 for i in values:
