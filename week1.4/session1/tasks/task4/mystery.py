@@ -13,6 +13,13 @@
 def mystery_func(string):
     upper = 0
     lower = 0
+    """For a given input, the program goes through all its characters to see if its a string of words. 
+
+    It looks for upper and lower case characters. Everytime an upper case character is found using .isupper(), the value of upper gets increased by 1. 
+    Same is the case for when a lower case character is found (by using the built-in function .islower()). 
+    
+    The function returns the number of uppercase and lowercase characters in the format (upper, lower)
+    """
 
     for ch in string:
         if ch.isupper():
@@ -34,5 +41,5 @@ print(mystery_func("ABC"))
 # Uncomment the lines of code one by one and run the program
 # to see if you are right?
 
-# print(mystery_func("X"))
-# print(mystery_func("[2, 3]"))
+print(mystery_func("X"))
+print(mystery_func("[2, 3]")) #the class type in the def funtion is a 'string' while in this case we have entered a 'list'
