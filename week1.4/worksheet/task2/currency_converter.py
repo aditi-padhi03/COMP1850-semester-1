@@ -6,7 +6,7 @@
     other than any provided template code, was written and developed by
     you independently.
 
-    Name:
+    Name: Aditi Padhi
 """
 
 def currency_converter(amount, from_currency, to_currency):
@@ -18,10 +18,12 @@ def currency_converter(amount, from_currency, to_currency):
         'INR': {'PHP': 0.69, 'CNY': 0.09, 'GBP': 0.01}
     }
 
-    # your code here
+    if amount < 0:
+        return 0.0
+    if from_currency == to_currency:
+        return round(float(amount), 2)
+    
+    rate = conversion_rate[from_currency][to_currency]
+    return round(amount*rate, 2)
 
-    return None
 
-# Submit only this file currency_converter.py with the completed function.
-
-# Remove any additional code you may have added during development and testing.
