@@ -17,13 +17,18 @@ class Point:
         self.x = x
         self.y = y
 
-    def distance(self):
+        if not isinstance(x, (int, float)):
+            raise TypeError("x must be an integer.")
+        if not isinstance(y, (int, float)):
+            raise TypeError("y must be an integer.")
+
+    def distance(self) -> float:
         """
         Returns distance of this Point from the origin.
         """
         return math.hypot(self.x, self.y)
 
-    def distance_to(self, p):
+    def distance_to(self, p: Point):
         """
         Returns distance of this Point from the specified Point.
         """
