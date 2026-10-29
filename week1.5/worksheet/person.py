@@ -21,6 +21,11 @@ class Person:
         self.birth = birth
 
     def initials(self):
+        """
+        Returns the initials/uppercased letters of each part of a name.
+        """
+        
+
         
 
 
