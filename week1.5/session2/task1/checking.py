@@ -35,7 +35,6 @@ class Point:
         return math.hypot(self.x - p.x, self.y - p.y)
 
 
-# Test program
 
 p = Point("two", "one")
 print(p.distance())

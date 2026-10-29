@@ -27,7 +27,7 @@ class Money:
         Returns a string representation of this Money.
         """
         return f"£{self.pounds}.{self.pence}"
-        # Represent pence with a leading zero if needed (e.g. '05')
+        
 
     def __add__(self, other):
         """
@@ -37,9 +37,7 @@ class Money:
             raise TypeError("'other' must be a Money object")
         
         return Money(self.pounds + other.pence, self.pence + other.pence)
-        # Add code here to check that parameter 'other' is a Money object,
-        # add self to other, then return the sum as a new Money object
-        # (see README for hints and tips)
+        
 
 m1 = Money(1, 8)
 m2 = Money(10, 11)
