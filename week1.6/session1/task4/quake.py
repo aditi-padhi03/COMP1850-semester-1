@@ -1,6 +1,6 @@
 # Week 1.6, Session 1: Task 4
 
-from dataclasses import dataclass
+from dataclasses import dataclass #decorator
 from datetime import datetime
 
 

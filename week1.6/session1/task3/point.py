@@ -2,7 +2,6 @@
 
 import math
 
-
 class Point:
     """
     A point in 2D space.
