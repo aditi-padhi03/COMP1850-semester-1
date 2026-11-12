@@ -10,7 +10,7 @@ def assert_MarkError(bad_mark):
     except MarkError:
         pass
     except Exception:
-        assert False, "Exception should be MarkError"
+        assert MarkError, "Exception should be MarkError"
 
 
 if __name__ == "__main__":
