@@ -15,13 +15,27 @@ def average_bar_chart(data):
     '''
     Complete this code to produce a bar chart of the total of each 'hours per day' column
     '''
-    pass
+    data["hours_per_day_columns"] = data["Study_Hours_Per_Day",
+        "Extracurricular_Hours_Per_Day",
+        "Sleep_Hours_Per_Day",
+        "Social_Hours_Per_Day",
+        "Physical_Activity_Hours_Per_Day"
+    ]
+    data["hours_per_day"] = data["hours_per_day_columns"].mean()
+    hours_per_day.plot(kind="bar", colour="lavender")
+    plt.title("Average Hours Per Day")
+    plt.xlabel("Activity")
+    plt.ylabel("Average Hours")
+    plt.tight_layout()
+    plt.show()
+
 
 def hours_histogram(data, column_name):
     '''
     Complete this code so that it can display a histogram of any given 'hours per day' column
     '''
-    pass
+    
+    
 
 def hours_pie_chart(data, student_id):
     '''
